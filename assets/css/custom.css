@@ -28,10 +28,22 @@
   background-color: rgba(255,255,255,0.8);
 }
 
-.is-white {
-  color: #fff;
-}
-
 .is-current-skill {
   font-weight: bolder;
+}
+
+.is-4em-spacer {
+  padding-left: 4em;
+}
+
+.is-1em-spacer {
+  padding-left: 1em;
+}
+
+/*#top-bar {
+  height: 100px;
+}*/
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif !important;
 }

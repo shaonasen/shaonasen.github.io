@@ -1,11 +1,11 @@
 <header class="site-header" role="banner">
-  <!-- <div class="container"> -->
-    <nav class="navbar is-semi-transparent">
+  <!-- <div class="columns"> -->
+    <nav class="navbar is-semi-transparent" id="top-bar">
       <div class="navbar-brand">
-        <a class="navbar-item is-uppercase" href="/">{{ site.title }}</a>
-        <!-- <p class="navbar-item">:-)</p>
-        <p class="navbar-item">:-D</p>
-        <p class="navbar-item">:-P</p> -->
+        <div class="navbar-item is-hidden-touch is-1em-spacer">
+        </div>
+        <a class="navbar-item is-uppercase is-size-3" href="/">
+        <b>{{ site.title }}</b></a>
         <div class="navbar-burger" data-target="navMenu">
           <span></span>
           <span></span>
@@ -14,17 +14,17 @@
       </div>
       <div class="navbar-menu" id="navMenu">
         <div class="navbar-start">
-          <p class="navbar-item is-size-7">I root for the underdogs to rise, persevere and achieve through football and design thinking.</p>
+          <p class="navbar-item is-size-6"><i>My days are filled with play.</i></p>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item" href="http://passcollective.org">
+          <a class="navbar-item is-size-5" href="http://passcollective.org">
           PASS
           </a>
-          <a class="navbar-item" href="https://goo.gl/WqkNZY">
+          <a class="navbar-item is-size-5" href="https://goo.gl/WqkNZY">
           Football || Design
           </a>
-          <a class="navbar-item" href="https://drive.google.com/file/d/0Bxl05gL17UfuS09GN0hTNjVPUHM/view?usp=sharing">
-          Resume
+          <a class="navbar-item is-size-5" href="https://drive.google.com/file/d/0Bxl05gL17UfuS09GN0hTNjVPUHM/view?usp=sharing">
+          CV
           </a>
           <div class="navbar-item">
             <div class="field is-grouped">
@@ -35,11 +35,11 @@
             {% endif %} -->
             {% if site.linkedin %}
               <a class="button is-transparent" href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank">
-                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                <span class="icon is-size-4"><i class="fa fa-linkedin is-size-4"></i></span>
               </a>&nbsp;
             {% endif %}
             {% if site.twitter %}
-              <a class="button is-transparent" href="https://twitter.com/{{ site.twitter }}" target="_blank">
+              <a class="button" href="https://twitter.com/{{ site.twitter }}" target="_blank">
                 <span class="icon"><i class="fa fa-twitter"></i></span>
               </a>
             {% endif %}
