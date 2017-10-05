@@ -1,14 +1,24 @@
-<script>
+<script type="text/javascript">
+  var pathname = window.location.pathname.replace('/','').replace('/','').replace('/','');
+  // console.log('On page: '+pathname);
+  $('#'+pathname).addClass('is-current-skill');
+</script>
+<!-- <script>
   var play_slides = true;
   $('#pause').show();
   $('#play').hide();
+</script> -->
+<script>
+  var play_slides = false;
+  $('#pause').hide();
+  $('#play').show();
 </script>
 <script>
   // $('#top-bar').height($('#bottom-bar').height());
   $('#top-bar').css('height', '6em');
   $('#bottom-bar').css('height', '6em');
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $( '#pause' ).click(function() {
     play_slides = false;
     $(this).hide();
@@ -21,10 +31,7 @@
     $('#pause').show();
     console.log('Slideshow resumed');
   });
-  var pathname = window.location.pathname.replace('/','').replace('/','').replace('/','');
-  // console.log('On page: '+pathname);
-  $('#'+pathname).addClass('is-current-skill');
-</script>
+</script> -->
 <script type="text/javascript">
   $(document).ready(function() {
     var image = $('html');
