@@ -20,10 +20,10 @@
         <aside class="menu">
           <ul class="menu-list">
             <li class="is-white is-size-7 is-hidden-touch">.</li>
-            <li><a class="is-paddingless" href="/">Participatory Design</a></li>
-            <li><a class="is-paddingless" href="/research/">Design Research</a></li>
-            <li><a class="is-paddingless" href="/visual/">Visual Communications</a></li>
-            <li><a class="is-paddingless" href="/football/">Football for Development</a></li>
+            <li><a class="is-paddingless" id="participatory" href="/participatory/">Participatory Design</a></li>
+            <li><a class="is-paddingless" id="research" href="/research/">Design Research</a></li>
+            <li><a class="is-paddingless" id="visual" href="/visual/">Visual Communications</a></li>
+            <li><a class="is-paddingless" id="football" href="/football/">Football for Development</a></li>
             <li class="is-white is-size-7 is-hidden-touch">.</li>
           </ul>
         </aside>
@@ -46,4 +46,7 @@
     play_slides = true;
     console.log('Slideshow resumed');
   });
+  var pathname = window.location.pathname.replace('/','').replace('/','').replace('/','');
+  // console.log('On page: '+pathname);
+  $('#'+pathname).addClass('is-current-skill');
 </script>

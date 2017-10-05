@@ -31,3 +31,7 @@
 .is-white {
   color: #fff;
 }
+
+.is-current-skill {
+  font-weight: bolder;
+}
