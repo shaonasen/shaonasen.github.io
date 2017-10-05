@@ -3,22 +3,35 @@
   // console.log('On page: '+pathname);
   $('#'+pathname).addClass('is-current-skill');
 </script>
-<!-- <script>
+
+<script type="text/javascript">
+  $('#show-nav').hide();
+  $( '#show-nav' ).click(function() {
+    $(this).hide();
+    $('#hide-nav').show();
+    $('#bottom-bar').show();
+    $('#top-bar').show();
+    console.log('Nav bars showing');
+  });
+  $( '#hide-nav' ).click(function() {
+    $(this).hide();
+    $('#show-nav').show();
+    $('#bottom-bar').hide();
+    $('#top-bar').hide();
+    console.log('Nav bars hidden');
+  });
+</script>
+
+<script>
+  $('#top-bar').css('height', '7em');
+  // $('#bottom-bar').css('height', '6em');
+  // $('#bottom-bar').css('height', 'auto');
+</script>
+
+<script type="text/javascript">
   var play_slides = true;
   $('#pause').show();
   $('#play').hide();
-</script> -->
-<script>
-  var play_slides = false;
-  $('#pause').hide();
-  $('#play').show();
-</script>
-<script>
-  // $('#top-bar').height($('#bottom-bar').height());
-  $('#top-bar').css('height', '6em');
-  $('#bottom-bar').css('height', '6em');
-</script>
-<!-- <script type="text/javascript">
   $( '#pause' ).click(function() {
     play_slides = false;
     $(this).hide();
@@ -31,18 +44,21 @@
     $('#pause').show();
     console.log('Slideshow resumed');
   });
-</script> -->
+</script>
+
 <script type="text/javascript">
   $(document).ready(function() {
     var image = $('html');
     var i = 0;
-    image.css('background', 'url(' + images [i] +') no-repeat center center fixed');
+    $('#project').text(projects[i]);
+    $('#description').text(descriptions[i]);
+    image.css('background', 'url(' + images [i++] +') no-repeat center center fixed');
     image.css('-webkit-background-size', 'cover');
     image.css('-moz-background-size', 'cover');
     image.css('-o-background-size', 'cover');
     image.css('background-size', 'cover');
-    $('#project').text(projects[i]);
-    $('#description').text(descriptions[i]);
+    if(i == images.length)
+      i = 0;
     setInterval(function(){
       if (play_slides == true) {
         $('#project').text(projects[i]);

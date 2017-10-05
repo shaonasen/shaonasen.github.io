@@ -8,8 +8,8 @@ next: visual
 permalink: /research/
 ---
 <script type="text/javascript">
-  var images = ['/assets/images/research/design_research_blorepublic1.JPG','/assets/images/research/design_research_blorepublic2.JPG','/assets/images/research/design_research_blorepublic4.JPG'];
-  var projects = [];
+  var images = ['/assets/images/designresearch1_sphere.jpg','/assets/images/design_research2_blorepublic.jpg'];
+  var projects = ['Sphere','BLOREPUBLIC'];
   var descriptions = [];
   var interval = 5000;
 </script>

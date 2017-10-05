@@ -8,8 +8,8 @@ next: index
 permalink: /football/
 ---
 <script type="text/javascript">
-  var images = ['/assets/images/football/IMG_1504.JPG'];
-  var projects = [];
+  var images = ['/assets/images/football_for_dev_magicbus_SAIwin.JPG'];
+  var projects = ['Magic Bus'];
   var descriptions = [];
   var interval = 5000;
 </script>

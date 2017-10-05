@@ -47,3 +47,13 @@
 html, body {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
+
+* {
+  color: #000 !important;
+}
+
+.is-fixed-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
