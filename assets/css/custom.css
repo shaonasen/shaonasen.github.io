@@ -3,8 +3,21 @@
   bottom: 0;
 }
 
+.has-padding-top {
+  padding-bottom: 0.2em;
+}
+
+.has-padding-bottom {
+  padding-bottom: 0.2em;
+}
+
+.has-no-side-padding {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
 .is-full-width {
-  width: 100%;  
+  width: 100%;
 }
 
 .is-transparent {
@@ -13,4 +26,8 @@
 
 .is-semi-transparent {
   background-color: rgba(255,255,255,0.8);
+}
+
+.is-white {
+  color: #fff;
 }

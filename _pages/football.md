@@ -1,10 +1,15 @@
 ---
 layout: default
-bg: football.jpg
-skill: Design Research
-project: Project Sphere at Jaaga, July 2015
-description: Assessing how to strengthen socio-environmental ventures in Bangalore
+skill: Football for Development
+project:
+description:
 prev: visual
 next: index
 permalink: /football/
 ---
+<script type="text/javascript">
+  var images = ['/assets/images/football/IMG_1504.JPG'];
+  var projects = [];
+  var descriptions = [];
+  var interval = 5000;
+</script>

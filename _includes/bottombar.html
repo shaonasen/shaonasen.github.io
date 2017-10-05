@@ -4,12 +4,12 @@
     <div class="level-left">
       <div class="level-item">
         <div class="field is-grouped">
-          <a class="button is-transparent is-large">
+          <a class="button is-transparent is-large" id="play">
             <span class="icon is-large">
               <i class="fa fa-play"></i>
             </span>
           </a>
-          <a class="button is-transparent is-large">
+          <a class="button is-transparent is-large" id="pause">
             <span class="icon is-large">
               <i class="fa fa-pause"></i>
             </span>
@@ -19,19 +19,31 @@
       <div class="level-item">
         <aside class="menu">
           <ul class="menu-list">
-            <li><a class="is-marginless is-paddingless" href="/">Participatory Design</a></li>
-            <li><a class="is-marginless is-paddingless" href="/research/">Design Research</a></li>
-            <li><a class="is-marginless is-paddingless" href="/visual/">Visual Communications</a></li>
-            <li><a class="is-marginless is-paddingless" href="/football/">Football for Development</a></li>
+            <li class="is-white is-size-7 is-hidden-touch">.</li>
+            <li><a class="is-paddingless" href="/">Participatory Design</a></li>
+            <li><a class="is-paddingless" href="/research/">Design Research</a></li>
+            <li><a class="is-paddingless" href="/visual/">Visual Communications</a></li>
+            <li><a class="is-paddingless" href="/football/">Football for Development</a></li>
+            <li class="is-white is-size-7 is-hidden-touch">.</li>
           </ul>
         </aside>
       </div>
     </div>
     <div class="level-item">
       <div>
-        <p class="heading">{{ page.project }}</p>
-        <p>{{ page.description }}</p>
+        <p class="heading" id="project">{{ page.project }}</p>
+        <p id="description">{{ page.description }}</p>
       </div>
     </div>
   </nav>
 </div>
+<script type="text/javascript">
+  $( '#pause' ).click(function() {
+    play_slides = false;
+    console.log('Slideshow paused');
+  });
+  $( '#play' ).click(function() {
+    play_slides = true;
+    console.log('Slideshow resumed');
+  });
+</script>

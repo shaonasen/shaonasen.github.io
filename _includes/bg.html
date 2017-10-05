@@ -1,11 +1,27 @@
-<style>
-  html { 
-    /*background: linear-gradient(to right, white, transparent),url(/assets/images/{{ page.bg }}) no-repeat center center fixed; */
-    background: url(/assets/images/{{ page.bg }}) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+<script type="text/javascript">
+  $(document).ready(function() {
+    var image = $('html');
+    var i = 0;
+    image.css('background', 'url(' + images [i] +') no-repeat center center fixed');
+    image.css('-webkit-background-size', 'cover');
+    image.css('-moz-background-size', 'cover');
+    image.css('-o-background-size', 'cover');
+    image.css('background-size', 'cover');
+    $('#project').text(projects[i]);
+    $('#description').text(descriptions[i]);
+    setInterval(function(){
+      if (play_slides == true) {
+        $('#project').text(projects[i]);
+        $('#description').text(descriptions[i]);
+        image.css('background', 'url(' + images [i++] +') no-repeat center center fixed');
+        image.css('-webkit-background-size', 'cover');
+        image.css('-moz-background-size', 'cover');
+        image.css('-o-background-size', 'cover');
+        image.css('background-size', 'cover');
+        if(i == images.length)
+          i = 0;
+      }
+    },interval);
 
-</style>
+  });
+</script>

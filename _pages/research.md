@@ -1,10 +1,15 @@
 ---
 layout: default
-bg: research.jpg
 skill: Design Research
-project: Project Sphere at Jaaga, July 2015
-description: Assessing how to strengthen socio-environmental ventures in Bangalore
+project:
+description:
 prev: index
 next: visual
 permalink: /research/
 ---
+<script type="text/javascript">
+  var images = ['/assets/images/research/design_research_blorepublic1.JPG','/assets/images/research/design_research_blorepublic2.JPG','/assets/images/research/design_research_blorepublic4.JPG'];
+  var projects = [];
+  var descriptions = [];
+  var interval = 5000;
+</script>
