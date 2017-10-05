@@ -1,3 +1,25 @@
+<script>
+  var play_slides = true;
+  $('#pause').show();
+  $('#play').hide();
+</script>
+<script type="text/javascript">
+  $( '#pause' ).click(function() {
+    play_slides = false;
+    $(this).hide();
+    $('#play').show();
+    console.log('Slideshow paused');
+  });
+  $( '#play' ).click(function() {
+    play_slides = true;
+    $(this).hide();
+    $('#pause').show();
+    console.log('Slideshow resumed');
+  });
+  var pathname = window.location.pathname.replace('/','').replace('/','').replace('/','');
+  // console.log('On page: '+pathname);
+  $('#'+pathname).addClass('is-current-skill');
+</script>
 <script type="text/javascript">
   $(document).ready(function() {
     var image = $('html');

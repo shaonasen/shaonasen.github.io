@@ -5,18 +5,13 @@
 
   <body>
     {% include header.html %}
-    <script>
-      var play_slides = true;
-    </script>
-
     <section class="section">
       <div class="container">
         {{ content }}
       </div>
     </section>
-
     {% include bottombar.html %}
-    {% include bg.html %}
+    {% include js.html %}
     {% include burger_script.html %}
   </body>
 </html>

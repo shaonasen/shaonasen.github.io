@@ -37,16 +37,3 @@
     </div>
   </nav>
 </div>
-<script type="text/javascript">
-  $( '#pause' ).click(function() {
-    play_slides = false;
-    console.log('Slideshow paused');
-  });
-  $( '#play' ).click(function() {
-    play_slides = true;
-    console.log('Slideshow resumed');
-  });
-  var pathname = window.location.pathname.replace('/','').replace('/','').replace('/','');
-  // console.log('On page: '+pathname);
-  $('#'+pathname).addClass('is-current-skill');
-</script>
