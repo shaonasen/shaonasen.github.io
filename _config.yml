@@ -16,19 +16,19 @@
 title: Shaona Sen
 author: Shaona Sen
 bio: > # this means to ignore newlines until "baseurl:"
-  Bengali–American designer with 9 years of cross-sector experience in Design, Sport and Development between USA and India. 
+  Bengali–American designer with 9 years of cross-sector experience in Design, Sport and Development between USA and India.
   I actively practice user-centred design which stems from field-based observations and participatory design processes. On a mission of creating positive social impact through playful methods of learning. I root for the underdogs to rise, persevere and achieve.
 email: shaona.sen@gmail.com
-twitter: 
+twitter:
 linkedin: shaonasen
 
 include: ["_pages"]
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://shaonasen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: 
 plugins:
   - jekyll-feed
 
