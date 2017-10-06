@@ -57,3 +57,8 @@ html, body {
   right: 0;
   top: 50%;
 }
+
+.has-no-outline {
+  outline: none !important;
+  text-decoration: none !important;
+}
