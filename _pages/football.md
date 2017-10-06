@@ -3,8 +3,8 @@ layout: default
 skill: Football for Development
 project:
 description:
-prev: visual
-next: index
+prev: /visual/
+next: /participatory/
 permalink: /football/
 ---
 <script type="text/javascript">

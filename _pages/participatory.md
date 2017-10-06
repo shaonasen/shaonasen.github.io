@@ -1,8 +1,8 @@
 ---
 layout: default
 skill: Participatory Design
-prev: football
-next: research
+prev: /football/
+next: /research/
 permalink: /participatory/
 ---
 <script type="text/javascript">

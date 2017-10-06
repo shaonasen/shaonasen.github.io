@@ -3,8 +3,8 @@ layout: default
 skill: Design Research
 project:
 description:
-prev: index
-next: visual
+prev: /participatory/
+next: /visual/
 permalink: /research/
 ---
 <script type="text/javascript">

@@ -3,8 +3,8 @@ layout: default
 skill: Visual Communications
 project:
 description:
-prev: research
-next: football
+prev: /research/
+next: /football/
 permalink: /visual/
 ---
 <script type="text/javascript">

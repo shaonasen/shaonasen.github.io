@@ -6,13 +6,19 @@
         <div class="level-item is-hidden-touch is-1em-spacer">
         </div>
         <div class="field is-grouped">
-          <a class="button is-transparent is-large" id="play">
-            <span class="icon is-large">
+          <a class="button is-transparent" id="play">
+            <span class="icon is-large is-hidden-touch">
+              <i class="fa fa-play aria-hidden="true""></i>
+            </span>
+            <span class="icon is-hidden-desktop">
               <i class="fa fa-play aria-hidden="true""></i>
             </span>
           </a>
-          <a class="button is-transparent is-large" id="pause">
-            <span class="icon is-large">
+          <a class="button is-transparent" id="pause">
+            <span class="icon is-large is-hidden-touch">
+              <i class="fa fa-pause aria-hidden="true""></i>
+            </span>
+            <span class="icon is-hidden-desktop">
               <i class="fa fa-pause aria-hidden="true""></i>
             </span>
           </a>
@@ -21,15 +27,36 @@
       <div class="level-item is-hidden-touch is-4em-spacer">
       </div>
       <div class="level-item">
-        <p class="is-size-6">
+        <p class="is-size-6 is-hidden-touch">
           <b>SKILLS:</b>
         </p>
+        <div class="level is-mobile is-hidden-desktop">
+          <div class="level-item">
+            <a class="button is-transparent" id="left" href="{{page.prev}}">
+              <span class="icon is-hidden-desktop">
+                <i class="fa fa-angle-left aria-hidden="true""></i>
+              </span>
+            </a>
+          </div>
+          <div class="level-item">
+            <p class="is-paddingless is-size-7">
+              <b>SKILL: {{page.skill}}</b>
+            </p>
+          </div>
+          <div class="level-item">
+            <a class="button is-transparent" id="right" href="{{page.next}}">
+              <span class="icon is-hidden-desktop">
+                <i class="fa fa-angle-right aria-hidden="true""></i>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="level-item is-hidden-touch is-1em-spacer">
       </div>
       <div class="level-item">
         <aside class="menu">
-          <ul class="menu-list">
+          <ul class="menu-list is-hidden-touch">
             <li class="has-text-white is-size-7 is-hidden-touch">.</li>
             <li><a class="is-paddingless" id="participatory" href="/participatory/">Participatory Design</a></li>
             <li><a class="is-paddingless" id="research" href="/research/">Design Research</a></li>
